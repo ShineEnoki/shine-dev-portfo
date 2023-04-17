@@ -12,8 +12,9 @@ const About = () => {
         <h2>About Me</h2>
         <div className="container about__container">
             <div className="about__me">
-                <div className="about__me-image">
+                <div className="about__me-image relative">
                     <Image 
+                        priority
                         src="/assets/shine.jpg"
                         fill 
                         alt="Shine" 

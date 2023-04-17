@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 import {FaAward} from 'react-icons/fa';
 import {FiUsers} from 'react-icons/fi';
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai';
@@ -13,7 +13,11 @@ const About = () => {
         <div className="container about__container">
             <div className="about__me">
                 <div className="about__me-image">
-                    <img src="/assets/shine.jpg" alt="" />
+                    <Image 
+                        src="/assets/shine.jpg"
+                        fill 
+                        alt="Shine" 
+                    />
                 </div>
             </div>
             <div className="about__content">

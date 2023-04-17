@@ -12,8 +12,13 @@
     transition: var(--transition);
 }
 
-.portfolio__item-image > img{
+.portfolio__item-image {
     width: 95%;
+    position: relative;
+    display: block;
+}
+
+.portfolio__item-image > img{
     margin: 5px auto;
     height: 220px;
 

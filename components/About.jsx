@@ -40,7 +40,7 @@ const About = () => {
                 </div>
                 <b></b>
                 <p>
-                    After completed all 9 courses in the Meta-Front-End-Developer program, I started coding <b>"Real World Projects"</b> such as Book Shop with google api,University Projects using <b>React</b> sometime <b>Full MERN stact</b>.Stil learning and coding new Teach with passions.
+                    After completed all 9 courses in the Meta-Front-End-Developer program, I started coding <b>`&quot;`Real World Projects`&quot;`</b> such as Book Shop with google api,University Projects using <b>React</b> sometime <b>Full MERN stact</b>.Stil learning and coding new Teach with passions.
                 </p>
 
                 <a href="#contact" className='btn btn-primary' > Discus With Me </a>

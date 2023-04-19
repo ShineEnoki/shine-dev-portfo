@@ -1,14 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 
+
 const CTA = () => {
   return (
     <div className='cta'>
-      <Link href='/assets/my-resume.pdf'>
+      <Link href='/assets/my-resume.pdf'className='bg-variant rounded-lg p-4 hover:bg-transparent hover:border hover:border-black'>
         Download CV
       </Link>
 
-      <a href="#contact" className='btn btn-primary'>Contact Me</a>
+      <Link href="contact" className='btn btn-primary'>Contact Me</Link>
     </div>
   )
 }

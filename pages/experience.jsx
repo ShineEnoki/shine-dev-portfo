@@ -6,35 +6,35 @@ import { BsPatchCheckFill } from 'react-icons/bs';
 const frontendTechs = [
     {
         name: "HTML",
-        description: 'A markup language used to create web pages and applications'
+        description: 'A markup language used to create web pages and applications.'
     },
     {
         name: "CSS",
-        description: 'To style web pages'
+        description: 'To style web pages.'
     },
     {
         name: "JavaScript",
-        description: 'A programming language used for creating interactive web applications'
+        description: 'A programming language used for creating interactive web applications.'
     },
     {
         name: "React",
-        description: 'A JavaScript library used for building user interfaces'
+        description: 'A JavaScript library used for building user interfaces.'
     },
     {
         name: "Bootstrap",
-        description: 'A popular framework used for creating responsive and mobile-first websites'
+        description: 'A popular framework used for creating responsive and mobile-first websites.'
     },
     {
         name: "Tailwind CSS",
-        description: 'A utility-first CSS framework that provides a set of pre-designed CSS classes to make building responsive user interfaces faster and easier'
+        description: 'A utility-first CSS framework that provides a set of pre-designed CSS classes to make building responsive user interfaces faster and easier.'
     },
     {
         name: "MaterialUI",
-        description: 'A popular React component library that provides pre-designed components making it easier to build attractive and consistent user interfaces'
+        description: 'A popular React component library that provides pre-designed components making it easier to build attractive and consistent user interfaces.'
     },
     {
         name: "NextJS",
-        description: 'a popular open-source React-based framework used for building server-side rendered (SSR) and static web applications'
+        description: 'A popular open-source React-based framework used for building server-side rendered (SSR) and static web applications.'
     },
 
 ]
@@ -43,11 +43,11 @@ const TechArticle = ({tech}) => {
     return (
         <article className='rounded-lg flex gap-3 p-3'>
             <div>
-                <BsPatchCheckFill className='color-primary mt-[6px] w-5 h-5' />
+                <BsPatchCheckFill className='color-primary mt-[10px] w-5 h-5' />
             </div>
             <div>
-                <h4> {tech.name} </h4>
-                <small> {tech.description} </small>
+                <h2 className='text-[25px] font-chivo-mono'> {tech.name} </h2>
+                <p className='text-[18px]'> {tech.description} </p>
             </div>
         </article>
     )
@@ -63,7 +63,7 @@ const Experience = () => {
             <div className="container ">
                 <div className="bg-variant p-5 rounded-3xl transition hover:bg-transparent">
                     <h3 className='text-center color-primary text-xl mb-5'>Frontend Development Tech</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
                         
                         {
                             frontendTechs.map( tech => 

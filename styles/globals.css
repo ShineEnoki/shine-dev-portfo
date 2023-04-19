@@ -29,6 +29,29 @@
 
 }
 
+.bg-primary{
+    background-color: #1f1f38;
+}
+
+.bg-variant{
+    background-color: #2c2c6c;
+}
+
+.color-primary{
+    color: #4db5ff;
+}
+
+.color-primary-variant{
+    color: rgba(77, 181, 255, 0.4);
+}
+
+.color-light{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.transition {
+    transition: all 400 ease;
+}
 html{
     scroll-behavior: smooth;
 }

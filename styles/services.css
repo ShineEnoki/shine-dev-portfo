@@ -30,25 +30,6 @@
     margin: .5rem;
 }
 
-.service__list{
-    padding: 2rem;
-}
-
-.service__list li {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: .8rem;
-}
-
-.service__list-icon{
-    color: var(--color-primary);
-    margin-top: 5px;
-}
-
-.service__list p {
-    font-size: .9rem;
-}
-
 
 /* ============== MEDIA QUERY ==========*/
 

@@ -6,7 +6,7 @@ import Image from 'next/image';
 //importing assets
 import myLoli from '../public/assets/my-loli.png';
 import BookShop from '../public/assets/hope-book-shop.png'
-import project2 from '../public/assets/portfolio2.jpg';
+import kkStore from '../public/assets/kk-store.png'
 import project3 from '../public/assets/portfolio3.jpg';
 import project4 from '../public/assets/portfolio4.jpg';
 
@@ -27,35 +27,65 @@ const projects = [
         githubLink: "https://github.com/ShineEnoki/react-book-shop-app",
         demoLink: 'https://my-loli.vercel.app/'
     },
+    {
+        id: 3,
+        name: 'Kaung Khat Store',
+        src: kkStore,
+        description: "Avoid crowd for covid 19. Shop on your home.Take care your help and We will take care the rest.",
+        demoLink: 'https://kk-store-ecommerce.vercel.app/'
+    },
 
 ]
 
 const Project = ({ project }) => {
-    const { name, src, description, githubLink, demoLink } = project
+    const { name, src, description, githubLink, demoLink } = project;
     return (
-        <article className='portfolio__item'>
-            <div className="portfolio__item-image">
-                <Image src={src} alt="" />
+        <article className='portfolio__item bg-variant flex flex-col lg:flex-row gap-4 items-center group px-2 py-2'>
+            <div className="portfolio__item-image  h-full  lg:w-[45%] ">
+                <Image
+                    src={src}
+                    className=' rounded-md group-hover:scale-110 group-hover:rounded-xl'
+                    width={400}
+                    height={250}
+                    alt=""
+                />
             </div>
-            <h3> {name} </h3>
-            <p className='portfolio__item-description'> {description} </p>
-            <div className='flex gap-1'>
-                <a href={githubLink} className='btn' target='_blank' rel="noreferrer">Github</a>
-                <a href={demoLink} className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+            <div className=' flex-1 h-full px-6 py-2'>
+                <div className='flex flex-col gap-2 justify-between'>
+                    <div className='flex flex-col gap-4'>
+                        <h3 className='text-bold text-2xl'> {name} </h3>
+                        <p className='portfolio__item-description text-sm'>{description} </p>
+                    </div>
+
+                    <div className='flex gap-2'>
+                        {
+                            githubLink
+                                ? <a href={githubLink} className='btn' target='_blank' rel="noreferrer">Github</a>
+                                : <button href="/" 
+                                disable className='btn font-semibold'> Source Unavailable</button>
+                        }
+
+                        
+
+                        <a href={demoLink} className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+                    </div>
+                </div>
+
             </div>
 
-        </article>
+
+        </article >
     )
 }
 
-const Portfolio = () => {
+const Projects = () => {
     return (
-        <section id='portfolio'>
+        <section id='portfolio' className=''>
             <Nav />
             <h5>My Work</h5>
             <h2>Portfolio</h2>
 
-            <div className="container portfolio__container">
+            <div className="container flex flex-col gap-4 ">
                 {
                     projects.map((project) => {
                         return (
@@ -68,4 +98,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio;
+export default Projects;

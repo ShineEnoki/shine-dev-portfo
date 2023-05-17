@@ -23,8 +23,8 @@ const Nav = () => {
                 <AiOutlineUser />
             </Link>
             <Link 
-                href='/experience'    
-                className={`${router.pathname === '/experience' ? 'active' : null}`}
+                href='/techs'    
+                className={`${router.pathname === '/techs' ? 'active' : null}`}
             >
                 <BsStopwatch />
             </Link>

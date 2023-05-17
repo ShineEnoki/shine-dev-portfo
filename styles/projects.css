@@ -1,8 +1,3 @@
-.portfolio__container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-}
 
 .portfolio__item{
     background: var(--color-bg-variant);
@@ -13,8 +8,8 @@
 }
 
 .portfolio__item-image {
-    width: 95%;
-    position: relative;
+    margin: 10px auto;
+    /* position: relative; */
     display: block;
 }
 
@@ -33,26 +28,3 @@
     background: transparent;
 }
 
-
-
-
-
-/* ============== MEDIA QUERY ==========*/
-
-/* ====== MEDIUM DEVICES ====== */
-@media screen and (max-width: 1024px){
-    .portfolio__container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
-    }
-}
-
-/* ======== SMALL DEVICES =======*/
-@media screen and (max-width: 600px)  {
-    .portfolio__container{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2.5rem;
-    }
-}

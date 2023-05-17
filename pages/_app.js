@@ -4,7 +4,7 @@ import '@/styles/nav.css';
 import '@/styles/header.css';
 import '@/styles/about.css';
 import '@/styles/projects.css';
-import '@/styles/experience.css';
+import '@/styles/techs.css';
 import '@/styles/services.css';
 
 

@@ -50,7 +50,7 @@ const About = () => {
                         my skills further.
                     </p>
                     
-                    <p> Hope to create <b> libraries and frameworks </b>  that solve developers's problems and difficulties </p>
+                    <p> Hope to create <b> libraries and frameworks </b>  that solve developers problems and difficulties </p>
 
                     <a href="#contact" className='btn btn-primary' > Discus With Me </a>
 

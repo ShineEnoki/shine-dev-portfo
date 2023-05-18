@@ -3,11 +3,13 @@ import React from 'react';
 
 import Image from 'next/image';
 
+
+
 //importing assets
 import myLoli from '../public/assets/my-loli.png';
 import BookShop from '../public/assets/hope-book-shop.png'
 import kkStore from '../public/assets/kk-store.png'
-import project3 from '../public/assets/portfolio3.jpg';
+import personPortfolio from '../public/assets/personal-portfolio.png';
 import project4 from '../public/assets/portfolio4.jpg';
 
 const projects = [
@@ -17,7 +19,7 @@ const projects = [
         src: myLoli,
         description: "What you have to do? What's on your mind? Loli, Your personal assistant is here for you.Let's me save your memory",
         githubLink: "https://github.com/ShineEnoki/my-loli-source-code",
-        demoLink: 'https://my-loli.vercel.app/'
+        demoLink: 'https://my-loli.vercel.app/',
     },
     {
         id: 2,
@@ -25,15 +27,24 @@ const projects = [
         src: BookShop,
         description: "Books are the plane, and the train, and the road. They are the destination, and the journey. They are home.Here is the hope",
         githubLink: "https://github.com/ShineEnoki/react-book-shop-app",
-        demoLink: 'https://my-loli.vercel.app/'
+        demoLink: 'https://my-loli.vercel.app/',
     },
     {
         id: 3,
-        name: 'Kaung Khat Store',
+        name: 'Kaung Khant Store',
         src: kkStore,
         description: "Avoid crowd for covid 19. Shop on your home.Take care your help and We will take care the rest.",
-        demoLink: 'https://kk-store-ecommerce.vercel.app/'
+        githubLink: 'https://github.com/ShineEnoki/KK-store-ecommerce',
+        demoLink: 'https://kk-store-ecommerce.vercel.app/',
     },
+    {
+        id: 5,
+        name: 'Personal Portfolio',
+        src: personPortfolio,
+        description: 'Have something to discuss! You are welcome from my portfolio, my gust',
+        githubLink: 'https://github.com/ShineEnoki/shine-dev-portfo',
+        demoLink: 'https://shine-dev-portfo.vercel.app/',
+    }
 
 ]
 
@@ -44,7 +55,7 @@ const Project = ({ project }) => {
             <div className="portfolio__item-image  h-full  lg:w-[45%] ">
                 <Image
                     src={src}
-                    className=' rounded-md group-hover:scale-110 group-hover:rounded-xl'
+                    className=' rounded-md group-hover:scale-110 group-hover:rounded-xl max-w-[500px]'
                     width={400}
                     height={250}
                     alt=""

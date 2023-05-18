@@ -65,7 +65,7 @@ const TechArticle = ({tech}) => {
     const { name, Icon, iconColor, description } = tech;
     console.log(iconColor)
     return (
-        <article className='rounded-lg flex flex-col gap-3 p-3'>
+        <article className='bg-variant hover:bg-transparent hover:border-2 hover:border-red-500 rounded-lg flex flex-col gap-3 p-3'>
             <div className='flex flex-row items-center gap-2 '>
                
                 <Icon 
@@ -75,7 +75,7 @@ const TechArticle = ({tech}) => {
 
             </div>
             <div>
-                <p className='text-[18px]'> {description} </p>
+                <p className='text-[18px] sm:text-sm'> {description} </p>
             </div>
         </article>
     )
@@ -89,7 +89,7 @@ const Techs = () => {
             <h2 className='font-semibold'>TECHS</h2>
 
             <div className="container ">
-                <div className="bg-variant p-5 rounded-3xl transition hover:bg-transparent">
+                <div className=" p-5 rounded-3xl transition hover:bg-transparent">
                     <h3 className='text-center color-primary text-xl mb-5'>Frontend Development Tech</h3>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
                         

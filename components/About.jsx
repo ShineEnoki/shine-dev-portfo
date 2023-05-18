@@ -49,6 +49,8 @@ const About = () => {
                         project I work on, and am always looking for new challenges to push
                         my skills further.
                     </p>
+                    
+                    <p> Hope to create <b> libraries and frameworks </b>  that solve developers's problems and difficulties </p>
 
                     <a href="#contact" className='btn btn-primary' > Discus With Me </a>
 

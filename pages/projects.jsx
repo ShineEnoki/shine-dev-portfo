@@ -55,9 +55,10 @@ const Project = ({ project }) => {
             <div className="portfolio__item-image  h-full  lg:w-[45%] ">
                 <Image
                     src={src}
-                    className=' rounded-md group-hover:scale-110 group-hover:rounded-xl max-w-[500px]'
+                    className=' rounded-md group-hover:scale-110 group-hover:rounded-xl max-w-[500px] h-auto '
                     width={400}
                     height={250}
+                    layout='responsive'
                     alt=""
                 />
             </div>

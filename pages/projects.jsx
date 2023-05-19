@@ -26,8 +26,8 @@ const projects = [
         name: 'Hope Book Shop',
         src: BookShop,
         description: "Books are the plane, and the train, and the road. They are the destination, and the journey. They are home.Here is the hope",
-        githubLink: "https://github.com/ShineEnoki/react-book-shop-app",
-        demoLink: 'https://my-loli.vercel.app/',
+        githubLink: "https://github.com/ShineEnoki/hope-book-shop",
+        demoLink: 'https://hope-book-shop.vercel.app/',
     },
     {
         id: 3,

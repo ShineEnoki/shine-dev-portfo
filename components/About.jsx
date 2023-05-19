@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
+import Link from 'next/link';
 
 const About = () => {
     return (
@@ -52,7 +53,7 @@ const About = () => {
                     
                     <p> Hope to create <b> libraries and frameworks </b>  that solve developers problems and difficulties </p>
 
-                    <a href="#contact" className='btn btn-primary' > Discus With Me </a>
+                    <Link href="/contact" className='btn btn-primary' > Discus With Me </Link>
 
                 </div>
             </div>

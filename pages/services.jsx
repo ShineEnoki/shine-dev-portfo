@@ -2,7 +2,7 @@ import Nav from '@/components/Nav';
 import React from 'react';
 import { BiCheck } from "react-icons/bi";
 
-const skills = [
+const frontEndSkills = [
     {
         id: 1,
         details: "HTML/CSS (including experience with CSS preprocessors such as (Sass/SCSS)"
@@ -23,16 +23,35 @@ const skills = [
         id: 5,
         details: "Understanding of web development concepts and terminology (such as HTTP, APIs, DOM, etc.)"
     },
+    {
+        id: 6,
+        details: "Strong knowledage in REST api and Backend process.",
+    }
 ]
 
-const Skill = ({skill}) => {
+const personalSkills = [
+    {
+        id: 1,
+        details: "Problem solving"
+    },
+    {
+        id: 2,
+        details: "Critical Thinking"
+    },
+    {
+        id: 3,
+        details: "Time Management"
+    },
+]
+
+const Skill = ({ skill }) => {
     return (
         <li className='flex gap-1'>
             <p className='mt-3 text-[20px]'>
                 *
             </p>
-            <p className='px-3 py-2'> 
-                { skill }
+            <p className='px-3 py-2'>
+                {skill}
             </p>
         </li>
     )
@@ -44,20 +63,39 @@ const Services = () => {
             <Nav />
             <h1 className='text-center'>Skills</h1>
 
-            <div className="container services__container text-white" >
-                <article className="service">
-                    <div className="service__head">
-                        <h3>Web Development</h3>
-                    </div>
-                    <ul className='flex flex-col gap-2 px-3 py-2'>
-                        { skills.map((skill) => {
-                            return (
-                                <Skill key={skill.id} skill={skill.details} />
-                            )
-                        })}
-                    </ul>
-                </article>
+            <div className='flex flex-col gap-4'>
+                <div className="container services__container text-white max-w-[900px] " >
+                    <article className="service">
+                        <div className="service__head">
+                            <h3>FrontEnd Development</h3>
+                        </div>
+                        <ul className='flex flex-col gap-2 px-3 py-2'>
+                            {frontEndSkills.map((skill) => {
+                                return (
+                                    <Skill key={skill.id} skill={skill.details} />
+                                )
+                            })}
+                        </ul>
+                    </article>
+                </div>
+
+                <div className="container services__container text-white max-w-[900px]" >
+                    <article className="service">
+                        <div className="service__head">
+                            <h3>Personal Skills</h3>
+                        </div>
+                        <ul className='flex flex-col gap-2 px-3 py-2'>
+                            {personalSkills.map((skill) => {
+                                return (
+                                    <Skill key={skill.id} skill={skill.details} />
+                                )
+                            })}
+                        </ul>
+                    </article>
+                </div>
             </div>
+
+
         </section>
     )
 }

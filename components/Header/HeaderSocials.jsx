@@ -16,7 +16,6 @@ const HeaderSocials = () => {
         <a href="https://www.facebook.com/shine.enoki" target='_blank' rel="noopener noreferrer" >
             <CiFacebook />
         </a>
-
     </div>
   )
 }

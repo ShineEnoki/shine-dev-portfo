@@ -65,12 +65,12 @@ const TechArticle = ({tech}) => {
     const { name, Icon, iconColor, description } = tech;
     console.log(iconColor)
     return (
-        <article className='bg-variant hover:bg-transparent hover:border-2 hover:border-red-500 rounded-lg flex flex-col gap-3 p-3'>
+        <article className='bg-variant hover:bg-transparent hover:border-2 hover:border-red-500 rounded-lg flex flex-col gap-3 p-3 group'>
             <div className='flex flex-row items-center gap-2 '>
                
                 <Icon 
                     style={{color: iconColor}}
-                    className={`mt-[10px] w-10 h-10`} />
+                    className={`mt-[10px] w-10 h-10 group-hover:scale-[130%] transition duration-500 `} />
                 <h2 className='text-[25px] font-chivo-mono'> {name} </h2>
 
             </div>

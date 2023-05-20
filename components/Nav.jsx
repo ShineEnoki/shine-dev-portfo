@@ -1,12 +1,10 @@
 import React from 'react';
 
 //icons
-import { AiOutlineHome, AiOutlineUser, AiOutlineMessage } from 'react-icons/ai';
-import { BsStopwatch } from "react-icons/bs";
-import { RiServiceLine } from "react-icons/ri";
+import { AiOutlineHome, AiOutlineMessage } from 'react-icons/ai';
 import { FaProjectDiagram } from 'react-icons/fa'
 import {  RiCustomerService2Line } from 'react-icons/ri'
-
+import { GrStackOverflow } from 'react-icons/gr'
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -31,7 +29,7 @@ const Nav = () => {
                 href='/techs'    
                 className={`${router.pathname === '/techs' ? 'active' : null}`}
             >
-                <BsStopwatch />
+                <GrStackOverflow />
             </Link>
             <Link 
                 href='/services' 
